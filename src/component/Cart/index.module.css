@@ -1,0 +1,66 @@
+.main{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.productList{
+    display: flex;
+    flex-direction: column;
+}
+
+.listItem{
+    display: flex;
+    align-items: center;
+}
+.ImageAndTitle{
+    display: flex;
+    gap:16px;
+    align-items: center;
+    margin-right: auto;
+}
+.productImg{
+    height: 60px;
+    width: 60px;
+}
+
+.quantityAndPrice{
+    display: flex;
+    justify-content: end;
+    gap:16px;
+    margin: 8px;
+}
+
+.quantityAndPrice p{
+    width: 80px;
+    text-align: end;
+}
+
+.total{
+    display: flex;
+    justify-content: end;
+}
+
+.qs{
+    display: flex;
+    width: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.button{
+    width: "30px";
+    height: "30px";
+    font-size: "18px";
+    font-weight: "bold";
+    text-align: "center";
+    line-height: "30px";
+    border: "1px solid #ccc";
+    cursor: "pointer";
+    background: "#f0f0f0";
+};
+
+.number{
+    width: 40px;
+    margin: "0 10px";
+    font-size : "18px";
+};
