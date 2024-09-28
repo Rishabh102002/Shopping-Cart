@@ -1,8 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
+
 function Nav({cartList}) {
     return (
         <div className="flex bg-white px-44 py-2 mb-4 justify-between items-center shadow-custom sticky top-0 z-10">
-            <div className="text-2xl font-[700]">E-cart</div>
+            <div className="flex gap-3 items-center text-2xl font-[700]">
+                <img src="src\assets\logo.png" className="w-10" />
+                E-cart
+            </div>
             <nav className="flex gap-10">
                 <NavLink
                     to="/"

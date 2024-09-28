@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Nav from "./component/Nav";
 import { Outlet } from "react-router-dom";
+import { CgSpinnerTwo } from "react-icons/cg";
 
 function App() {
     const [cartList, setCartList] = useState([]);
@@ -21,7 +22,10 @@ function App() {
         <div>
             <Nav cartList={cartList} />
             {loading ? (
-                <p>Loading...</p>
+                <div className="flex justify-center items-center h-screen gap-4">
+                    <CgSpinnerTwo className="animate-spin text-4xl text-slate-600" />
+                    Loading...
+                </div>
             ) : (
                 <>
                     <Outlet
